@@ -1,6 +1,5 @@
 <?php
 
-#Palindrome Api
 header("Access-Control-Allow-Origin: *");
 
 #Initial string
