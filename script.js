@@ -39,7 +39,8 @@ async function white_Space_Remover(link){
 
     let white_Space_Remover_response = await fetch(link)
     let white_Space_Remover_String = await white_Space_Remover_response.json()
-    text.innerHTML = white_Space_Remover_String.FixedString
+    fixed_Text.innerHTML = white_Space_Remover_String.FixedString
+    console.log(white_Space_Remover_String.FixedString)
 }
 
 let password_Button = document.getElementById("password_button")
