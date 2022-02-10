@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Php APIs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class=left-side>
+            <div class="math-expression-api-section section">
+                <span class="title">Input X and Y to calculate</span>
+                <label for="number_X">Input X</label>
+                <input type="number" id="number_X">
+                <label for="number_Y">Input Y</label>
+                <input type="number" id="number_Y">
+                <div class="expression_Result_Section">
+                    <button type="button" id="expression_Button">Submit</button>
+                    <div id="expression_Result"></div>
+                </div>
+            </div>
+
+            <div class="palindrome-section section">
+                <span class="title">Input a String to check is Palindrome</span>
+                <label for="palindrome">Input your string</label>
+                <input type="text" id="palindrome">
+                <div class="palindrome_Result_Section">
+                    <button type="button" id="palindrome_Button">Submit</button>
+                    <div id="result_Palindrome_String"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="white_space_section section">
+                <span class="title">Remove White Space From paragraph</span>
+                <label for="text">Enter a Paragraph</label>
+                <textarea name="text" id="text"></textarea>
+                <div class="white_Space_result">
+                    <button type="button" id="fix_Space_Button">Submit</button>
+                    <div id="fixed_Text"></div>
+                </div>
+            </div>
+
+            <div class="password_section section">
+                <span class="title">Check if your password is valid</span>
+                <label for="password">Input Your password</label>
+                <input type="password" id="password">
+                <div class="password_Result">
+                    <button type="button" id="password_button">Submit</button>
+                    <div id="result_password"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

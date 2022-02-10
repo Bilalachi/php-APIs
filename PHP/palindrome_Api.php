@@ -11,7 +11,7 @@ $reverse_string = strrev($string);
 #Validating and checking
 function isPalindrome($string){
     if(strlen($string) >= 2){
-        if ($string == $reversed_string){
+        if ($string == $reverse_string){
             return true;
         }else
             return false;
