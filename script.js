@@ -1,5 +1,3 @@
-
-
 let math_Expression_Button = document.getElementById("expression_Button");
 math_Expression_Button.addEventListener("click", function() {
     let x = document.getElementById("number_X")
@@ -17,16 +15,17 @@ async function math_Expression(link) {
 
 let palindrome_Button = document.getElementById("palindrome_Button");
 palindrome_Button.addEventListener("click", function(){
-    let palindrome = document.getElementById("palindrome")
+    let palindrome = document.getElementById("palindrome").value
     let palindrome_Api = "http://localhost/API/palindrome_Api.php/?string=" + palindrome;
     palindrome_Check(palindrome_Api)
 })
+
 
 async function palindrome_Check(link){
     let palindrome_response = await fetch(link)
     let palindrome_String = await palindrome_response.json()
     result_Palindrome_String.innerHTML = palindrome_String.result
-
+    
 }
 
 let fix_Space_Button = document.getElementById("fix_Space_Button");
