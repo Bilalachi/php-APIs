@@ -1,8 +1,9 @@
 <?php
+
 header("Access-Control-Allow-Origin: *");
 
-$x = $_GET["x"];
-$y = $_GET["y"];
+$x = (int)$_GET['x'];
+$y = (int)$_GET['y'];
 
 $expression = "2 * $x + $y % 2"; //Showing the expression
 $solution = 2 * $x + $y % 2; //Solving the expression
